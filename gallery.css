@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url(https://db.onlinewebfonts.com/c/02a5628b91717ae7191a2b202a5e93a4?family=Orelo+SemiWide+Regular);
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.art-wrap{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(155, 33, 33);
+    /* position: relative; */
+    overflow: hidden;
+    position: relative;
+}
+
+.art-wrap>.art-txt>p{
+    font-family: "Orelo SemiWide Regular";
+    position: absolute; 
+    bottom: 15px;
+    font-size: 270px;
+    color: #fff;
+    font-weight: 200px;
+    letter-spacing: -10px;
+}
+.video{
+    width: 600px;
+    height: 500px;
+    /* background-color: aquamarine; */
+    position: absolute;
+    right: 0;
+}
+.cate{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin: 0 auto;
+    background: black;
+}
+.search{
+    margin: 0px auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+.search input{
+  width: 90%;
+  height: 40px;
+  margin-right: 10px;
+  background-color: black;
+border-width: 0px 0 2px;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Pretendard-Regular';
+
+}
+.search button{
+    font-family: 'Pretendard-Regular';
+    width: 60px;
+    height: 40px;
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  font-size: 17px;
+}
+.sort{
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+.sort>ul{
+    display: flex;
+}
+.sort>ul>li{
+    text-align: center;
+    margin-top: 20px;
+    list-style-type: none;
+}
+.sort>ul>li>a{
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.gallery{
+    background-color: black;
+}
+.grid{
+    padding: 30px 0;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:2fr 2fr 2fr 2fr;
+    border-top: solid rgb(155, 33, 33) 3px;
+}
+.grid>div{
+    background:black;
+    margin: 10px auto;
+    position: relative;
+}
+.grid>div::before{
+    content: "";
+    display: block;
+}
+.grid-img{
+    padding: 10px;
+    height: 280px;
+    overflow: hidden;
+}
+.grid>div>.grid-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.grid>div:hover .img-text {
+    opacity: 1;
+  }
+.img-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; left: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+    padding-left: 17px;
+}
+.img-text>p{
+    line-height:20px;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+.mega-cate{
+    width: 65px;
+    float: left;
+    padding: 135px 0px 0px 30px;
+}
+.mega-cate::after{
+    content: "";
+    clear: both;
+}
+.title{
+    color: #fff;
+    padding: 40px 0 10px 0;
+}
+
+.title>h1{ 
+    font-family: 'Pretendard-Regular';
+    display: inline;
+    padding: 0 0 0px 150px;
+    font-size: 27px;
+}
+.mega-cate>ul>li{
+    padding: 10px 0;
+    list-style-type: none;
+}
+.mega-cate>ul>li>a{
+    text-decoration: none;
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+    color:white;
+}
+.submenu > li {
+    line-height: 30px;
+}
+.submenu{
+    height: 0;
+    overflow: hidden;
+}
+.menu > li:hover {
+    transition-duration: 0.5s;
+  }
+.menu > li:hover .submenu {
+    height: 120px;
+    transition-duration: 1s;
+  }
+  .submenu>li>a:hover{
+    color: rgb(155, 33, 33);
+  }
+.submenu>li>a{
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+    padding-left: 20px;
+    text-decoration: none;
+    color:#d4d4d4;
+}
+footer {
+ background-color: black;
+ padding: 30px 0;
+ border-top:  solid 1px #fff;
+}
+footer>p{
+  
+    display: inline;
+   margin-left: 30px;
+    background-color: black;
+    font-size: 12px;
+    color: #fff;
+}

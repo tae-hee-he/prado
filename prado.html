@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prado.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+   
+  <!-- 아이콘 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<style>
+  :root {
+  --swiper-theme-color: rgb(155, 33, 33);
+}
+</style>
+<body>
+    <header>
+      <div class="logo"><p><a href="">MUSEO DEL PRADO</a></p></div>
+      <div class="menu">
+        <img src="img/ticket.svg" alt="">
+        
+      </div>
+    </header>
+    <div class="title">
+    <div class="btn-three">
+      <p><a href="">티켓 예매</a></p>
+    </div>
+    </div>
+
+    <div class="curation">
+      <h3>collection</h3>
+      
+    </div>
+
+</div>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="sw">
+          <div class="sw-img">
+            <img src="img/goya-1.jpg" alt="">
+          </div>
+          <div class="sub-img">
+            <img src="img/goya-2.jpg" alt="">
+          </div>
+          <div class="sw-text">
+            <p>1/4</p>
+            <p>GOYA</p>
+            <p>(1746년 3월 30일 - 1828년 4월 16일)</p>
+            <p>프란시스코 호세 데 고야 이 루시엔테스는 스페인의 대표적인 낭만주의 화가이자 판화가이다. 고야는 궁정화가이자 기록화가로서 많은 작품을 남겼다. 18세기 스페인 회화의 대표자로 특히 고전적인 경향에서
+            떠나 인상파의 시초를 보인 스페인 근세의 천재 화가로 알려져 있다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sw">
+          <div class="sw-img">
+            <img src="img/hiero-1.jpg" alt="">
+          </div>
+          <div class="sub-img">
+            <img src="img/hiero-2.jpg" alt="">
+          </div>
+          <div class="sw-text">
+            <p>2/4</p>
+            <p>Hieronimous</p>
+            <p>(1450년경 ~ 1516년 8월)</p>
+            <p>히에로니무스 보스는 네덜란드의 화가이다. 상상 속의 풍경을 담은 작품들로 유명하다. 
+              20세기 초현실주의 운동에 영향을 끼쳤다고 여겨진다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sw">
+          <div class="sw-img">
+            <img src="img/vela-2.jpg" alt="">
+          </div>
+          <div class="sub-img">
+            <img src="img/vela-1.jpg" alt="">
+          </div>
+          <div class="sw-text">
+            <p>3/4</p>
+            <p>Velaquez</p>
+            <p>(1599년 6월 6일 ~ 1660년 8월 6일)</p>
+            <p>디에고 로드리게스 데 실바 이 벨라스케스는 스페인의 화가이다.바로크 시대 펠리페 4세
+              (스페인어: Felipe IV) 궁정을 주도하던 화가였으며 초상화에 유능한 화가이기도 했다. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sw">
+          <div class="sw-img">
+            <img src="img/Greco-2.jpg" alt="">
+          </div>
+          <div class="sub-img">
+            <img src="img/Greco-1.jpg" alt="">
+          </div>
+          <div class="sw-text">
+            <p>4/4</p>
+            <p>El greco</p>
+            <p>(1541년 10월 1일 ~ 1614년 4월 7일)</p>
+            <p>엘 그레코는 그리스의 화가, 조각가, 건축가이다.
+               스페인에서 주로 활동하여 스페인 르네상스에 기여하였다. 종교적인 주제의 그림 속에서 독창적인 작품을 시작하였으며, 선명한 색과 그늘진 배경의 대조, 긴 얼굴 표현 등의 틀을 유지했다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+<div class="collection">
+   <div class="coll-btn"><a href="index.html" target="_blank"> 소장작품 보기 -</a></div>
+</div>
+
+<footer></footer>
+
+    <script>
+        <!-- 물결 효과  -->
+      feather.replace()
+    </script>
+    <script>
+        $('.title').ripples({
+      resolution: 600,
+      dropRadius: 15,
+      perturbance: 0.04,
+    });
+    </script>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+    });
+  </script>
+  </body>
+
+
+</html>
