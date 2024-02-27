@@ -211,3 +211,29 @@ footer>p{
     font-size: 12px;
     color: #fff;
 }
+section{
+    position: relative;
+}
+.back{
+ position: absolute;
+ bottom : 20px;
+left: 30px;
+width: 180px;
+
+}
+.back>a{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    border: solid 0.7px rgb(155, 33, 33);
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    color: rgb(155, 33, 33);
+    font-family: 'Pretendard-Regular';
+    font-size: 19px;
+    transition: 0.4s all ease-in-out;
+}
+.back:hover>a{
+    background-color: grey;
+}
